@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blow Me Away</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#home">Blow Me Away</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#doctors">Doctors</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#appointment">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Welcome to Blow Me Away</h1>
+            <p>Your beauty, our passion.</p>
+            <a href="#appointment" class="btn">Book an Appointment</a>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section id="doctors" class="doctors">
+        <h2>Skin Surgeon Doctor</h2>
+        <div class="doctor-list">
+            <div class="doctor">
+                <img src="https://img.freepik.com/premium-photo/indian-doctor-wearing-white-coat-with-stethoscope_85574-3676.jpg?w=2000" alt="Doctor 1">
+                <h3>Prof. Dr. Shipra Maharana</h3>
+                <p>Shipra Maharana is a Dermatologist in Bhawanipatna. She has been practicing medicine for over 18 years.</p>
+            </div>  
+            <div class="doctor">
+                <img src="https://thumbs.dreamstime.com/z/traditional-indian-female-doctor-working-her-desk-woman-79590386.jpg" alt="Doctor 2">
+                <h3>Dr. Shakti Pradhan</h3>
+                <p> Shakti Pradhan is a Dermatologist in Bhubaneswar. She has been practicing medicine for over 14 years.</p>
+            </div>
+            <div class="doctor">
+                <img src="https://c8.alamy.com/comp/E0120B/female-doctor-using-tablet-computer-E0120B.jpg" alt="Doctor 3">
+                <h3>Dr. Arpita Gupta</h3>
+                <p>Dr. Arpita Gupta is highly rated in 30 conditions and has been practicing medicine for 14 years.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service">
+                <img src="https://t3.ftcdn.net/jpg/01/83/61/50/360_F_183615058_PQQHofmIq2EnOM277vxfUJ6aZTRIe1Pu.jpg" alt="Eyebrow Shaping">
+                <h3>Eyebrow Shaping & Tinting</h3>
+                <p>Enhance brows with precise shaping and long-lasting tint for definition.</p>
+            </div>
+            <div class="service">
+                <img src="https://w7.pngwing.com/pngs/212/709/png-transparent-beauty-logo-face-care-logo.png" alt="Facial Treatments">
+                <h3>Facial Treatments</h3>
+                <p>Revitalize your skin with our refreshing and nourishing facial treatments.</p>
+            </div>
+            <div class="service">
+                <img src="https://t4.ftcdn.net/jpg/01/76/12/05/360_F_176120504_6QvTPWB0kCwqfXhWnoDXdCDElPRZ2BSz.jpg" alt="Haircut">
+                <h3>Haircut & Styling</h3>
+                <p>Trendy haircuts and styling for a fresh, confident new look!</p>
+            </div>
+            <div class="service">
+                <img src="https://www.shutterstock.com/image-vector/ipl-laser-hair-removal-verctor-260nw-2145187339.jpg" alt="Hair Removal">
+                <h3>Hair Removal</h3>
+                <p>Smooth, painless hair removal for silky, flawless skin every time!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section (Unchanged) -->
+    <section id="appointment" class="contact">
+        <h2>Let's not wait for the <span>"Perfect Look"</span></h2>
+        <p>Book An Appointment Now!</p>
+        
+        <form class="contact-form" action="https://submit-form.com/a3Lyar1ru" method="POST">
+            <div class="form-group">
+                <label><i class="fas fa-user"></i> Name*</label>
+                <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <label><i class="fas fa-venus-mars"></i> Gender*</label>
+                <select name="gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label><i class="fas fa-phone"></i> Contact*</label>
+                <input type="tel" name="contact" placeholder="Your Contact" required>
+            </div>
+            <div class="form-group">
+                <label><i class="fas fa-cut"></i> Service Type</label>
+                <input type="text" name="service_type" placeholder="Service Type">
+            </div>
+            <div class="form-group">
+                <label><i class="fas fa-envelope"></i> Email Id</label>
+                <input type="email" name="email" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+                <label><i class="fas fa-calendar"></i> Preferred Date*</label>
+                <input type="date" name="preferred_date" required>
+            </div>
+            <div class="form-group">
+                <label><i class="fas fa-map-marker-alt"></i> City*</label>
+                <select name="city" required>
+                    <option value="" disabled selected>Select City</option>
+                    <option>Delhi</option>
+                    <option>Bhubaneswar</option>
+                    <option>Bhawanipatna</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label> Location*</label>
+                <input type="text" name="location" placeholder="Your Location" required>
+            </div>
+            <div class="form-group">
+                <label><i class="fas fa-clock"></i> Preferred Time*</label>
+                <select name="preferred_time" required>
+                    <option value="" disabled selected>Select Time</option>
+                    <option>AM</option>
+                    <option>PM</option>
+                </select>
+            </div>
+            
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </section>
+
+</body>
+</html>

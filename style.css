@@ -1,0 +1,298 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffc8dd;
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 10px 15px; /* Reduced padding */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Salon Name (Logo) */
+.logo a {
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffafcc;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s ease-in-out;
+}
+.logo a:hover {
+    color: #a2d2ff;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; /* Ensures wrapping instead of overflow */
+    gap: 10px; /* Reduced gap to fit items */
+    padding: 0;
+    margin: 0;
+    overflow-x: auto; /* Scrolls if items don't fit */
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 8px 10px; /* Reduced padding */
+    transition: 0.3s ease-in-out;
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+.nav-links li a:hover {
+    background: #ffafcc;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Responsive Fix */
+@media (max-width: 1024px) {
+    .nav-links {
+        font-size: 14px;
+    }
+}
+@media (max-width: 850px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+}
+
+/* Hero Section */
+.hero {
+    height: 90vh;
+    background: url('https://i.ibb.co/GwVJ4qM/head-img.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+.hero .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ffafcc;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+.hero .btn:hover {
+    background: #ff79a6;
+}
+
+/* Doctors Section */
+.doctors {
+    text-align: center;
+    padding: 60px 20px;
+    background: #ffafcc;
+}
+.doctors h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.doctor-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.doctor {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+.doctor:hover {
+    transform: scale(1.05);
+}
+.doctor img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.doctor h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+.doctor p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Services Section */
+.services {
+    text-align: center;
+    padding: 60px 20px;
+    background: #ffc8dd;
+}
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+.service {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    transition: 0.3s ease;
+}
+.service:hover {
+    transform: translateY(-5px);
+}
+.service img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.service h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+.service p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .doctor-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .services-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+}
+.contact h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+.contact h2 span {
+    color: #ff79a6;
+}
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* Contact Form */
+.contact-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.form-group label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+.form-group i {
+    color: gold;
+    margin-right: 5px;
+}
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 2px solid #333;
+    background: transparent;
+    outline: none;
+}
+.btn {
+    grid-column: span 2;
+    padding: 12px;
+    background: #ff79a6;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.btn:hover {
+    background: #ff4d7d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-form {
+        grid-template-columns: 1fr;
+    }
+    .btn {
+        grid-column: span 1;
+    }
+}
